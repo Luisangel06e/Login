@@ -16,15 +16,17 @@ export function Captura (){
     }
 
     return(
-        <section className="formulario">
+        <section >
+            <div className="formulario">
             <h1> Captura</h1>
-            <form action="" className="formulario" onSubmit={handleSubmit} >
-                <input type="text" placeholder="Nombre" value={nombre} onChange={e=> setnombre(e.target.value)}/>
-                <input type="text" placeholder="Apellido Paterno" value={app} onChange={e=> setapp(e.target.value)}/>
-                <input type="text" placeholder="Apellido Materno" value={apm} onChange={e=> setapm(e.target.value)}/>
-                <button>Registrar</button>
+            <form action="" className="inputContainer" onSubmit={handleSubmit} >
+                <input type="text" className="inputBox" placeholder="Nombre" value={nombre} onChange={e=> setnombre(e.target.value)}/>
+                <input type="text" className="inputBox" placeholder="Apellido Paterno" value={app} onChange={e=> setapp(e.target.value)}/>
+                <input type="text" className="inputBox" placeholder="Apellido Materno" value={apm} onChange={e=> setapm(e.target.value)}/>
+                <button className="button">Registrar</button>
             </form>
             {error && <p>Te faltan datos </p>}
+            </div>
         </section>
     )
 }

@@ -1,11 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-
-
 .formulario{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    button : yellow;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.inputBox {
+    height: 48px;
+    width: 300px;
+    font-size: large;
+    border-radius: 8px;
+    margin: 5px;
+}
+.button{
+    border: none;
+    background: cornflowerblue;
+    color: white;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+}  

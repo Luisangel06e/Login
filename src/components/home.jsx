@@ -10,7 +10,7 @@ export function Home({user, setuser}){
         <div className="formulario">
 
             <h1>Bienvendido {user}</h1>
-            <Link to= {"/Captura"}><button >capturar</button></Link>
+            <Link to= {"/Captura"}><button className="button">Registrar</button></Link>
             
         </div>
 
